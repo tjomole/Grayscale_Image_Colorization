@@ -4,11 +4,11 @@ This model, at its core, leverages **PyTorch** for computer vision applications,
 
 ## GAN and ResNet Architecture
 
-This model utilizes a Generative Adversarial Network (GAN) with a ResNet18 architecture for the generative component (Goodfellow et al., 2014). The GAN comprises two neural networks: a generator and a discriminator, trained simultaneously via adversarial training. The generator creates images to fool the discriminator, which learns to distinguish between real and fake images (Isola et al., 2018).
+This model utilizes a Generative Adversarial Network (GAN) with a ResNet18 architecture for the generative component (Goodfellow et al., 2014). The GAN has two neural networks: a generator and a discriminator, trained simultaneously via adversarial training. The generator creates images to fool the discriminator, which learns to distinguish between real and fake images (Isola et al., 2018).
 
 The model employed a pre-trained ResNet18 model from PyTorch for the generator due to its effectiveness in image-based tasks (He et al., 2015). ResNet's “skip connector” architecture mitigates the vanishing and exploding gradient problems, allowing the model to access low-level features throughout the training process.
 
-The discriminator consists of five layers (64, 128, 256, 512, output), with model weights initialized using Xavier, Kaiming, or normal methods to enhance performance (Xavier, 2010; He et al., 2015).
+The discriminator has five layers (64, 128, 256, 512, output), with model weights initialized using Xavier, Kaiming, or normal methods to enhance performance (Xavier, 2010; He et al., 2015).
 
 Training employed 10,000 images from the COCO test2017 dataset — 8,000 for training and 2,000 for validation.
 
