@@ -2,7 +2,7 @@
 
 This model, at its core, leverages **PyTorch** for computer vision applications, specifically focusing on automatic image colorization. The model uses the **Microsoft Common Objects in Context (COCO)** dataset, which is the gold standard benchmark for evaluating the performance of state-of-the-art computer vision models.
 
-## GAN and ResNet
+## GAN and ResNet Architecture
 
 This model utilizes a Generative Adversarial Network (GAN) with a ResNet18 architecture for the generative component (Goodfellow et al., 2014). The GAN comprises two neural networks: a generator and a discriminator, trained simultaneously via adversarial training. The generator creates images to fool the discriminator, which learns to distinguish between real and fake images (Isola et al., 2018).
 
