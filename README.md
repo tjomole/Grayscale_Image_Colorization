@@ -10,7 +10,7 @@ The model employed a pre-trained ResNet18 model from PyTorch for the generator d
 
 The discriminator consists of five layers (64, 128, 256, 512, output), with model weights initialized using Xavier, Kaiming, or normal methods to enhance performance (Xavier, 2010; He et al., 2015).
 
-Training employed 10,000 images from the COCO test2017 dataset — 8,000 for training and 2,000 for testing.
+Training employed 10,000 images from the COCO test2017 dataset — 8,000 for training and 2,000 for validation.
 
 Performance was measured using Mean Absolute Error (L1) for the generator and a combination of L1 and Binary Cross Entropy (BCE) for both networks. Qualitative assessments involved sampling predictions every two epochs for manual review against visual expectations. The abridged version, in the code section, sampled predictions after epochs 5 & 10 and then generated 'ground truth' vs 'greyscale' vs 'predicted' images. Training loops for this abridged version ran for 10 epochs. 
 
